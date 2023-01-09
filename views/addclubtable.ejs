@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="adminstable.css">
+ 
+    <div class="bg-illustration">
+ <img src="cc.jpg" alt="logo" style="  width: 248px;">
+</head>
+<body>
+    <center>
+    <h3>club add table </h3>
+</center>
+      </header >
+    
+    </div>
+
+
+
+  
+ <table class="table table-striped table-hover">
+  <thead>
+      <tr>
+        
+
+   
+          <th>name</th>
+          <th>president</th>
+          <th> Description</th>
+          <th>myfile</th>
+          <th colspan="4">Actions</th>
+        </tr>
+        <tr> 
+      </tr>
+  </thead>
+  <tbody>
+<% Array.from(Add).forEach((item)=> { %> 
+        <tr>
+            
+            <td><%= item.name %></td>
+           
+            <td><%= item.president%></td>
+           
+            <td><%= item. Description %></td>
+           
+            <td><%= item.myfile %></td>
+           
+            
+            
+            
+            <td><%= item.Actions %>
+            <td><a href="/edit/Addd/<%= item._id %>"><img src="/P2.png" width="24" height="24"> </a></td>
+            <td><a href="/delete/Add/<%= item._id %> "><img src="/p1.png" width="24" height="24"></a></td>
+        </td>
+        </tr>
+    <% }) %> 
+     
+</tbody>
+</table>
+<div><a onclick="history.back()" class="button"  style="font-size: large;"> &#8249;&#8249; Go Back</a></div>

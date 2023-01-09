@@ -1,0 +1,60 @@
+<html>
+    <link rel="stylesheet" href="/join.css">
+  <h1> welcome to our club  <br></h1>
+  <h2> Our challenge: your future</h2><br>
+  <body>
+    <div class = "toppnl">
+        <form action="/edit/clbb/<%=id%>" method="post">
+      <div class = "title"> join us </div>
+      <form action = "#">
+        <div class = "field">
+            <input type = "text" required name="firstname2" value="<%=firstname2%>">
+            <label> Your first Name </label>
+        </div>
+        <div class = "field">
+          <input type = "text" required name="lastname2" value="<%=lastname2%>">
+          <label> Your last Name </label>
+      </div>
+        <div class = "field">
+          <input type = "text" required name="email2" value="<%=email2%>">
+          <label> Email Address </label>
+        </div>
+        <div class="container">
+        <label for="CLUB">the name of the CLUB : </label>
+        <select id="CLUB" name="CLUB"  value="<%=CLUB%>">
+          <option value="LIONS">LIONS</option>
+          <option value="AIKIDOU">AIKIDOU</option>
+          <option value="PHOTOGRAPHIE">PHOTOGRAPHIE</option>
+          <option value="GAMING">GAMING</option>
+          <option value="DIGIClub">DIGIClub</option>
+          <option value="ECHECS">ECHECS</option>
+          <option value="PICTURE">PICTURE</option>
+          <option value="KICKBOXING">KICKBOXING</option>
+          <option value="LECTURE">LECTURE</option>
+        </select>
+      </div>
+        <div class = "field">
+            <input type = "why you choose our club" required name="why" value="<%=why%>" >
+            <label> why you choose our club  </label>
+          </div>
+      <div>
+    
+        <div class = "field">
+      <input type="date" id="Date" name="Date"
+      value="<%=Date%>"
+               min="2022-01-01" max="2023-12-31">
+              </div>
+
+              <div class="input_field checkbox_option">
+                <input type="checkbox" id="cb" name="cb" value="<%=cb%>"  label for="cb">I agree with terms and conditions</label>
+              </div>
+        <div class = "field">
+          <input type = "submit" value = "Register">
+        </div>
+     </form>
+    </form>
+         
+      </form>
+    </div>
+  </body>
+</html>

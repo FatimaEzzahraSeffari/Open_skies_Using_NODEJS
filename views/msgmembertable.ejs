@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="msgmembertable.css">
+ <div class="bg-illustration">
+    <img src="cc.jpg" alt="logo" style="  width: 248px;">
+</head>
+<body>
+    <center>
+    <h3>message members table </h3>
+</center>
+      </header >
+    </div>
+    
+
+
+
+  
+ <table class="table table-striped table-hover">
+  <thead>
+      <tr>
+        
+          <th>name</th>
+          <th>email3</th>
+          <th>subject</th>
+          <th>message3</th>
+         
+          <th colspan="4">Actions</th>
+        </tr>
+        <tr> 
+      </tr>
+  </thead>
+  <tbody>
+<% Array.from(Msg).forEach((item)=> { %> 
+        <tr>
+            
+            <td><%= item.name %></td>
+           
+            
+           
+            <td><%= item.email3 %></td>
+           
+            <td><%= item.subject %></td>
+            
+            <td><%= item.message3 %></td>
+            
+           
+            <td><%= item.Actions %>
+            <td><a href="/edit/Msgg/<%= item._id %>"><img src="/P2.png" width="24" height="24"> </a></td>
+            <td><a href="/delete/Msg/<%= item._id %> "><img src="/p1.png" width="24" height="24"></a></td>
+        </td>
+        </tr>
+    <% }) %>  
+</tbody>
+</table>
+<div><a onclick="history.back()" class="button"  style="font-size: large;"> &#8249;&#8249; Go Back</a></div>

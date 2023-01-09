@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="adminstable.css">
+ 
+    <div class="bg-illustration">
+ <img src="cc.jpg" alt="logo" style="  width: 248px;">
+</head>
+<body>
+    <center>
+    <h3>admin members table </h3>
+</center>
+      </header >
+    
+    </div>
+
+
+
+  
+ <table class="table table-striped table-hover">
+  <thead>
+      <tr>
+        
+          <th>firstname4</th>
+          <th>lastname4</th>
+          <th>phonenumber4</th>
+          <th>email4</th>
+          <th>password4</th>
+          <th>retypepassword4</th>
+          <th>cb2</th>
+          <th colspan="4">Actions</th>
+        </tr>
+        <tr> 
+      </tr>
+  </thead>
+  <tbody>
+<% Array.from(Admin).forEach((item)=> { %> 
+        <tr>
+            
+            <td><%= item.firstname4 %></td>
+           
+            <td><%= item.lastname4%></td>
+           
+            <td><%= item.phonenumber4 %></td>
+           
+            <td><%= item.email4 %></td>
+           
+            <td><%= item.password4%></td>
+            
+            <td><%= item.retypepassword4 %></td>
+            
+            
+            
+            <td><%= item.cb2%></td>
+            <td><%= item.Actions %>
+            <td><a href="/edit/Adminn/<%= item._id %>""><img src="/P2.png" width="24" height="24"> </a></td>
+            <td><a href="/delete/Admin/<%= item._id %> "><img src="/p1.png" width="24" height="24"></a></td>
+        </td>
+        </tr>
+    <% }) %> 
+     
+</tbody>
+</table>
+<div><a onclick="history.back()" class="button"  style="font-size: large;"> &#8249;&#8249; Go Back</a></div>

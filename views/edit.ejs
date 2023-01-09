@@ -1,0 +1,96 @@
+
+<link rel="stylesheet" href="/singup.css">
+<div class="parent clearfix">
+    <div class="bg-illustration">
+      <img src="/cc.jpg" alt="logo">
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+ 
+ 
+      <center>
+          <h2>Welcome Back!</h2>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          &emsp;&emsp;&emsp;&emsp;
+          <h3><p>
+            To succeed in life, extracurricular activities are crucial. They make you a <br>  <br>complete person and help you develop transferable skills in the real world.<br>
+            &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;<br>Extracurricular activities can be a great way to explore your passions and interests<br>
+            <br>They can also help you grow in areas that you may not be able to explore on your own.
+            <br>  <br>  <br> with open skies you can join a lot of uemf's club according to your desire and your choice &#128519;</p></h3>
+          </center>
+
+    </div>
+    
+    <div class="login">
+      <div class="container">
+        <form action="/edit/Userr/<%=id%>" method="post">
+      <h1>&emsp;&emsp;&emsp;create your account</h1>
+    
+        <label for="firstname">first Name:</label>
+        <input type="text" id="firstname" name="firstname" value="<%=firstname%>">
+
+        <label for="lastname">last Name:</label>
+        <input type="text" id="lastname" name="lastname"  value="<%=lastname%>">
+
+        <label for="phonenumber">phone number:</label>
+        <input type="text" id="phone number" name="phonenumber"  value="<%=phonenumber%>">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%=email%>" >
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="<%=password%>" >
+        <label for="retypepassword">retypepassword:</label>
+        <input type="password" id="retypepassword" name="retypepassword" value="<%=retypepassword%>">
+
+        
+      
+      </fieldset>
+      <fieldset>
+      <label for="school">school:</label>
+      <select id="school" name="school" value="<%=school%>">
+        <optgroup label="school">
+          <option value="EIDIA">EIDIA</option>
+          <option value="EMADU">EMADU</option>
+          <option value="EPS">EPS</option>
+          <option value="faculté des sciences humaines et sociales"> faculté des sciences humaines et sociales</option>
+          <option value="EBS">EBS</option>
+          <option value="institut euromed des sciences juridiques et politiques">institut euromed des sciences juridiques et politiques</option>
+          <option value="faculté euromed de pharmacie">faculté euromed de pharmacie </option>
+          <option value="école d'ingenieur biomedtech">école d'ingenieur biomedtech</option>
+        </optgroup>
+      </select>
+     
+      <div>
+        <label>Interests: </label>
+       
+        <input type="checkbox" id="Musique" value="interest_Musique" name="Interests"><label class="light" for="Musique">Musique</label><br>
+          <input type="checkbox" id="sport" value="interest_sport" name="Interests"><label class="light" for="light">sport</label><br>
+        <input type="checkbox" id="photographie" value="interest_photographie" name="Interests"><label class="light" for="photographie">photographie</label>
+        &emsp;&emsp;&emsp;
+        <input type="checkbox" id="bénévolat" value="interest_bénévolat" name="Interests"><label class="light" for="bénévolat">bénévolat</label>
+        &emsp;&emsp;&emsp;
+        <input type="checkbox" id="programmation" value="interest_programmation" name="Interests"><label class="light" for="programmation">programmation</label>
+      </div>
+      <fieldset>
+        <label for="motivation" >motivation:</label>
+        <input type="text" id="motivation" name="motivation" value="<%=motivation%>" >
+      </fieldset>
+      <div>
+        <div class="input_field checkbox_option">
+          <input type="checkbox" id="cb1" name="cb1"  value="<%=cb1%>" label for="cb1">I agree with terms and conditions</label>
+        </div>
+      </div>
+      </fieldset>
+      <div class="ls">
+        <button> <a type="submit" class="contact"  > submit</a></button>
+      </div>
+
+      
+
+    </form>
+    
+  </div>
+</div>
+</div>

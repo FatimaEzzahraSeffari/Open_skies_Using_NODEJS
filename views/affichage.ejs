@@ -1,0 +1,60 @@
+
+<link rel="stylesheet" href="/afichage.css">
+<div class="parent clearfix">
+    <div class="bg-illustration">
+        
+  
+        
+
+      <div class="outer--glass">
+        <div class="wrap--glass">
+          <center>
+            <h2>Welcome Back!</h2>
+        </center>
+          <div>
+          <img src="cc.jpg" alt="logo">
+        </div>
+      
+          <h1> SHOW DATA BASE </h1>
+          <center>
+          <img src="R1.jpg" alt="">
+        </center>
+        <h2>  
+            <select id="choice" name="choice">
+                <option value="memberstable">members table</option>
+                <option value="adminsmemberstable">admins members table </option>
+                <option value="membersjoinclubs">members join clubs</option>
+                <option value="clubsmessages"> clubs messages</option>
+                <option value="membersmessages"> members messages</option>
+                <option value="addclubs"> addclubs</option>
+                </h2>
+        </div>
+     
+        <input type = "submit" value = "Register"  onclick="redirect()" style="color: black" >
+      </div>
+                
+
+         
+        </div>
+      </div>
+      <script>
+        function redirect() {
+          const selected = document.getElementById("choice").value;
+  
+          if (selected === "memberstable") {
+            window.location.href = "memberstable"; 
+          } else if (selected === "adminsmemberstable") {
+            window.location.href = "adminstable"; 
+          } else if (selected === "membersjoinclubs") {
+            window.location.href = "jointable";
+          } else if (selected === "clubsmessages") {
+            window.location.href = "clubsmsgtable";
+          } else if (selected === "membersmessages") {
+            window.location.href = "msgmembertable"; 
+          } else if (selected === "addclubs") {
+            window.location.href = "addclubtable"; 
+          } else {
+            window.location.href = "error"; 
+          }
+        }
+      </script>
